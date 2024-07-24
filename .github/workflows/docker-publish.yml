@@ -67,6 +67,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@96383f45573cb7f253c731d3b3ab81c87ef81934 # v5.0.0
         with:
+          # THIS MUST BE CHANGED
           images: ghcr.io/socstech/cmp3749-cmp9770
 
 
@@ -77,11 +78,13 @@ jobs:
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
         with:
           context: .
+          # THIS MUST BE CHANGED
           file: ./CMP3749 CMP9770 Big Data/.devcontainer/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
+          # TAGS MUST BE CHANGED
           tags: |
             ${{ steps.meta.outputs.tags }}
-            ghcr.io/socstech/cmp1905:latest
+            ghcr.io/socstech/cmp3749-cmp9770:latest
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
