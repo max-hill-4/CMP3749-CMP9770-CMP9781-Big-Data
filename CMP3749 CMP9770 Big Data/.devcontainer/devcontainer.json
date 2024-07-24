@@ -1,9 +1,9 @@
 {
     "name": "CMP3749-CMP9770",
     
-    //"image": "ghcr.io/socstech/cmp1905:latest",
+    "image": "ghcr.io/socstech/cmp3749-cmp9770:latest",
 
-    "build": { "dockerfile": "Dockerfile" },
+    //"build": { "dockerfile": "Dockerfile" },
 
     "customizations": {
         "vscode": {
