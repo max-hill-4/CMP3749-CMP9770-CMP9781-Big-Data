@@ -1,4 +1,4 @@
-# CMP3749 CMP9770 - Big Data
+# CMP3749 CMP9770 CMP9781 - Big Data
 This repository houses the devcontainer and docker image for the Big Data module at the University of Lincoln.
 ## What is Docker?
 Docker is a platform which allows developers to create and share containers.
