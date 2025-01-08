@@ -33,6 +33,8 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 RUN pip install --upgrade pip
 RUN pip install findspark
 RUN pip install pyspark
+RUN pip install setuptools
+RUN pip install seaborn
 RUN pip install streamlit
 RUN pip install ipykernel
 

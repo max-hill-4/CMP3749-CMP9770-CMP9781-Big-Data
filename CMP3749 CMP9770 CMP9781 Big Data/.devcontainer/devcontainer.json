@@ -1,9 +1,9 @@
 {
     "name": "Big Data",
     
-    "image": "ghcr.io/socstech/cmp3749-cmp9770-cmp9781:latest",
+   // "image": "ghcr.io/socstech/cmp3749-cmp9770-cmp9781:latest",
 
-    //"build": { "dockerfile": "Dockerfile" },
+    "build": { "dockerfile": "Dockerfile" },
 
     "customizations": {
         "vscode": {
